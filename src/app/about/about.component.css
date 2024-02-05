@@ -1,0 +1,39 @@
+section{
+    background-color:#1ABC9C ;
+    color: white;
+
+}
+h1{
+    width: fit-content;
+    margin: auto;
+}
+i{
+    bottom: -50%;
+    left: 50%;
+    transform: translate(-50%);
+    padding-block: 10px;
+}
+h1::before{
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 35%;
+    border-radius: 5px;
+    background-color: white;
+    bottom:-20%;
+    transform: translateY(50%);
+    left: 0;
+    z-index: 999;
+}
+h1::after{
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 35%;
+    border-radius: 5px;
+    background-color: white;
+    bottom:-20%;
+    transform: translateY(50%);
+    right: 0;
+    z-index: 999;
+}

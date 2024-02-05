@@ -1,0 +1,69 @@
+<section class="py-5">
+    <div class="layout" [class.d-flex]="shownlayout" (click)="hideLayout()">
+        <img [src]="currentImg"  alt="">
+    </div>
+    <div class="py-5">
+        <h1 class="text-center py-3  position-relative ">
+            PORTFOLIO COMPONENT
+            <i class="fa-solid fa-star position-absolute "></i>
+        </h1>
+        <div class="container py-5">
+            <div class="row g-5">
+                <div *ngFor="let imgsrc of imgsrcs" class="col-md-4">
+                    <div class="card text-bg-dark" (click)="showItem($event)">
+                        <img src="../../assets/images/{{imgsrc}}"  class="card-img" alt="...">
+                        <div class="card-img-overlay  align-items-center justify-content-center">
+                            <i class="fa-solid fa-plus text-white fa-8x"></i>
+                        </div>
+                      </div>
+                </div>
+               
+                <!-- <div class="col-md-4">
+                    <div class="card text-bg-dark">
+                        <img src="../../assets/images/port2.png" class="card-img" alt="...">
+                        <div class="card-img-overlay  align-items-center justify-content-center">
+                            <i class="fa-solid fa-plus text-white fa-8x"></i>
+                        </div>
+                      </div>
+                </div>
+    
+                <div class="col-md-4">
+                    <div class="card text-bg-dark">
+                        <img src="../../assets/images/port3.png" class="card-img" alt="...">
+                        <div class="card-img-overlay  align-items-center justify-content-center">
+                            <i class="fa-solid fa-plus text-white fa-8x"></i>
+                        </div>
+                      </div>
+                </div>
+    
+                <div class="col-md-4">
+                    <div class="card text-bg-dark">
+                        <img src="../../assets/images/port1.png" class="card-img" alt="...">
+                        <div class="card-img-overlay  align-items-center justify-content-center">
+                            <i class="fa-solid fa-plus text-white fa-8x"></i>
+                        </div>
+                      </div>
+                </div>
+    
+                <div class="col-md-4">
+                    <div class="card text-bg-dark">
+                        <img src="../../assets/images/port2.png" class="card-img" alt="...">
+                        <div class="card-img-overlay  align-items-center justify-content-center">
+                            <i class="fa-solid fa-plus text-white fa-8x"></i>
+                        </div>
+                      </div>
+                </div>
+    
+                <div class="col-md-4">
+                    <div class="card text-bg-dark">
+                        <img src="../../assets/images/port3.png" class="card-img" alt="...">
+                        <div class="card-img-overlay  align-items-center justify-content-center">
+                            <i class="fa-solid fa-plus text-white fa-8x"></i>
+                        </div>
+                      </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+   
+</section>

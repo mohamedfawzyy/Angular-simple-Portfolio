@@ -1,0 +1,19 @@
+.navbar{
+    background-color: #2C3E50;
+    padding-block: 1.25rem;
+    color: aliceblue;
+}
+.navbar-brand , .nav-link{
+    color: white;
+}
+.nav-link {
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+li{
+    padding: 10px;
+}
+.active{
+    background-color: #1ABC9C;
+    border-radius: 5px;
+}
